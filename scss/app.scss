@@ -1,0 +1,18 @@
+//? Colors
+$black: #151515;
+$white: #F4F4F5;
+$yellow: #F2D720;
+$orange: #E76A53;
+$pink: #C591A4;
+$blue: #201A47;
+//? Typography
+$heading-font: Starling, serif;
+$body-font: Freight Sans Pro, sans-serif;
+//? Media Queries 
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1250px;
+
+@import "./partials/Global";
+@import "./partials/Typography";
+@import "./partials/Nav";

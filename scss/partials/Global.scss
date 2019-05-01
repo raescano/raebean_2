@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.left-bar,
+.right-bar{
+    display: none;
+}
+
+.top-bar{
+    height: 20vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: white;
+}
+
+@media (min-width: $breakpoint-medium){
+    .left-bar,
+    .right-bar{
+        display: block;
+        height: 100vh;
+        width: 20%;
+        position: absolute;
+        z-index: 10;
+        background: white;
+    }
+
+    .left-bar{
+        left: 0;
+        top: 0;
+    }
+
+    .right-bar{
+        right: 0;
+        top: 0;
+    }
+}
+
+
+
+.kusuri{
+    background: #F7FDF6;
+}
+
+.pillar{
+    background: #8DB5CE;
+}
+
+.bercassi{
+    background: #EC7F8E;
+}
+
+.misc{
+    background: lightgreen;
+}
+
+.about{
+    background: lightsalmon;
+}
+
+
+main{
+    height: 100vh;
+    width: 100%;
+}
+
+.kusuri,
+.pillar,
+.bercassi,
+.misc,
+.about{
+    z-index: 1;
+    height: 60vh; 
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    display: grid;
+    place-items: center;
+
+    .home-content,
+    .about-content{
+        width: 80%;
+        margin: 0 auto;
+
+        h1{ 
+            font-size: 10vmin;
+        }
+
+        h3{
+            font-size: 6vmin;
+        }
+
+        p{
+            font-size: 2vmin;
+        }
+    }
+}
+
+
+@media (min-width: $breakpoint-medium){
+    .kusuri,
+    .pillar,
+    .bercassi,
+    .misc,
+    .about{
+        z-index: 1;
+        height: 60vh; 
+        width: 60%;
+        position: absolute;
+        top: calc(50% - 30vh);
+        left: 20%;
+        display: grid;
+        place-items: center;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Page transitions</title>
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+
+    <header>
+        <div class="site-branding">
+            <h1>Romina Escano</h1>
+            <h3>PRINT + MOTION + UI/UX DESIGNER</h3>
+        </div>
+
+        <ul class="top-nav">
+           <li><a href="index.html">projects</a></li> 
+           <li><a href="about.html">about</a></li>
+        </ul>
+    </header>
+
+    <nav>
+        <ul class="nav-items">
+            <li><a class="nav-item" href="index.html">O1 Kusuri</a></li>
+            <li><a class="nav-item" href="pillar.html">02 Pillar</a></li>
+            <li><a class="nav-item" href="bercassi.html">03 Bercassi</a></li>
+            <li><a class="nav-item" href="misc.html">04 Misc</a></li>
+        </ul>
+    </nav>
+
+    <div class="top-bar"></div>
+    <div class="left-bar"></div>
+    <div class="right-bar"></div>
+
+    <!-- Anything inside data-router-wrapper will be transformed -->
+    <!-- You can only have one child inside of data-router-wrapper -->
+    <!-- If more sections are needed add it into the router-view -->
+    <main data-router-wrapper>
+        <!-- data-router-view is what you will be transforming -->
+        <section data-router-view="kusuri" class="kusuri">
+            <div class="home-content">
+                <div class="home-presentation">
+                    <h1>Home Bruh</h1>
+                    <h3>Subhead bruh</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad nisi, ea alias nobis, nostrum velit aspernatur error porro, labore vitae amet autem laboriosam adipisci quam molestias sit tempore aliquam aperiam.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
